@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Send form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form__body">
+          <h1 class="form__title">Send form to gmail</h1>
+          <div class="form__item">
+            <label for="formName" class="form__label">Name*:</label>
+            <input
+              id="formName"
+              type="text"
+              name="name"
+              class="form__input _req"
+            />
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="form__label">E-mail*:</label>
+            <input
+              id="formEmail"
+              type="text"
+              name="name"
+              class="form__input _req _email"
+            />
+          </div>
+          <div class="form__item">
+            <div class="form__label">Chapaqay yoki o'ngaqay</div>
+            <div class="options">
+              <div class="options__item">
+                <input
+                  id="formRightHanded"
+                  checked
+                  type="radio"
+                  name="hand"
+                  value="right"
+                  class="options__input"
+                />
+                <label for="formRightHanded" class="options__label"
+                  ><span>O'ngaqay</span></label
+                >
+              </div>
+              <div class="options__item">
+                <input
+                  id="formLeftHanded"
+                  type="radio"
+                  name="hand"
+                  value="left"
+                  class="options__input"
+                />
+                <label for="formLeftHanded" class="options__label"
+                  ><span>Chapaqay</span></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Message</label>
+            <textarea
+              name="Message"
+              id="formMessage"
+              class="form__input"
+            ></textarea>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Age:</div>
+            <select name="age" class="select">
+              <option value="from 18 to 25">Teenager</option>
+              <option value="from 25 to 45">Old</option>
+              <option value="from 45">Super old</option>
+            </select>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Add file</div>
+            <div class="file">
+              <div class="file__item">
+                <input
+                  id="formImage"
+                  accept=".jpg, .png, .gif"
+                  type="file"
+                  name="image"
+                  class="file__input"
+                />
+                <div class="file__button">Select</div>
+              </div>
+              <div id="formPreview" class="file__preview"></div>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
+              <input
+                id="formAgreement"
+                checked
+                type="checkbox"
+                name="formAgreement"
+                class="checkbox__input _req"
+              />
+              <label for="formAgreement" class="checkbox__label"
+                ><span>I accept <a href="">Agreement</a>* </span></label
+              >
+            </div>
+          </div>
+          <button type="submit" class="form_button">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
